@@ -168,7 +168,7 @@ spec:
     spec:
       containers:
         - name: hdfs-journalnode
-          image: uhopper/hadoop-namenode:2.7.2
+          image: docker.oloooz.com/docker/hadoop/hadoop-namenode:2.7.2
           env:
             - name: HADOOP_CUSTOM_CONF_DIR
               value: /etc/hadoop-custom-conf

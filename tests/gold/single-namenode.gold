@@ -272,7 +272,7 @@ spec:
       dnsPolicy: ClusterFirstWithHostNet
       containers:
         - name: datanode
-          image: uhopper/hadoop-datanode:2.7.2
+          image: docker.oloooz.com/docker/hadoop/hadoop-datanode:2.7.2
           env:
             - name: HADOOP_CUSTOM_CONF_DIR
               value: /etc/hadoop-custom-conf
@@ -338,7 +338,7 @@ spec:
     spec:
       containers:
         - name: hdfs-client
-          image: uhopper/hadoop:2.7.2
+          image: docker.oloooz.com/docker/hadoop/hadoop:2.7.2
           env:
             - name: HADOOP_CUSTOM_CONF_DIR
               value: /etc/hadoop-custom-conf
@@ -383,7 +383,7 @@ spec:
       dnsPolicy: ClusterFirstWithHostNet
       containers:
         - name: hdfs-namenode
-          image: uhopper/hadoop-namenode:2.7.2
+          image: docker.oloooz.com/docker/hadoop/hadoop-namenode:2.7.2
           env:
             - name: HADOOP_CUSTOM_CONF_DIR
               value: /etc/hadoop-custom-conf
