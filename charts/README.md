@@ -386,5 +386,6 @@ See [reference](https://github.com/kubernetes/examples/blob/master/staging/podse
 
 ## Credits
 
-Many charts are using public Hadoop docker images hosted by
+Using custom docker images based on Hadoop docker images hosted by
 [uhopper](https://hub.docker.com/u/uhopper/).
+
